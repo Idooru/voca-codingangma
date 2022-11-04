@@ -1,14 +1,13 @@
-import "./App.css";
-
-const a = test();
-console.log(a);
-
-function test() {
-  return 1;
-}
+import Hello from "./component/Hello";
+import styles from "./App.module.css";
 
 function App() {
-  return <div id="test">{a}</div>;
+  return (
+    <div>
+      <Hello />
+      <div className={styles.box}>App</div>
+    </div>
+  );
 }
 
 export default App;
